@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;700&display=swap');
+
+:root {
+    --main-color: #1E6091;
+    --secondary-color: #76C893;
+    --main-font: 'Roboto', sans-serif;
+    --main-font-clr: #D9ED92
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(170deg, var(--secondary-color) 30%, var(--main-color) 10%);;
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: var(--main-font);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait-container {
+    height: 500px;
+    width: 350px;
+    margin-top: 50px;
+    /* padding: 10px; */
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    /* border: 2px solid black; */
+}
+
+.portrait {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.description-container {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    /* height: 500px; */
+    width: 350px;
+}
+
+.about-description {
+    /* border: 2px solid white; */
+    color: var(--main-font-clr);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.description {
+    color: var(--main-font-clr);
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.icons {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px
+}
+
+.github-icon,
+.linkedin-icon {
+    font-size: 3rem;
+    color: white;
+    /* width: 50px;
+    height: 50px; */
+}
