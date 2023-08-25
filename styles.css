@@ -33,7 +33,7 @@ body {
     margin-top: 50px;
     /* padding: 10px; */
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    /* border: 2px solid black; */
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;     */
 }
 
 .portrait {
@@ -84,3 +84,99 @@ body {
     /* width: 50px;
     height: 50px; */
 }
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+    gap: 100px;
+    padding: 100px 0;
+}
+
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    
+}
+
+.app-screenshot {
+    height: 55%;
+    max-width: 100%;
+    object-fit:cover;
+}
+
+.project-description {
+    padding: 10px;
+    height: 45%;
+    background-color: var(--secondary-color);
+}
+
+.project-header {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title {
+    margin-left: 20px;
+}
+
+.icons-container {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.simple-description {
+    display: block;
+    padding-bottom: 60px;
+    /* color: white; */
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.contact-info-container > * {
+    padding: 10px 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info > p {
+    margin-left: 10px;
+}
+
+.contact-foto-container {
+    height: 50%;
+    margin: 1px solid white;
+}
+
+.contact-info-picture {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
