@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;700&display=swap');
 
 :root {
-    --main-color: #1E6091;
-    --secondary-color: #76C893;
-    --third-color: #52B69A;
+    --main-color: #BC6C25;
+    --secondary-color: #FEFAE0;
+    --third-color: #DDA15E;
     --main-font: 'Roboto', sans-serif;
-    --main-font-clr: #D9ED92
+    --main-font-clr: #283618
 }
 
 * {
@@ -19,6 +19,11 @@ body {
     min-height: 100vh;
     max-width: 100vw;
     font-family: var(--main-font);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-me {
@@ -26,6 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80vw;
 }
 
 
@@ -75,14 +81,19 @@ body {
 .github-icon,
 .linkedin-icon {
     font-size: 3rem;
-    fill: white;
+    fill: var(--main-font-clr);
+}
+
+.humbleicons {
+    stroke: var(--main-font-clr)
 }
 
 
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    width: 80vw;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-items: center;
     gap: 100px;
     padding: 100px 0;
@@ -198,7 +209,6 @@ body {
     }
 
     .description-container {
-        /* border: 1px solid black; */
         background-color: var(--third-color);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         border-radius: 0 10px 10px 0;
@@ -208,23 +218,22 @@ body {
 
     .footer {
         flex-direction: row;
+        padding: 30px 180px;
+        background-color: var(--secondary-color);
     }
 
     .contact-info-container {
-        /* border: 1px solid white; */
         width: 50%;
+        background-color: var(--secondary-color);
     }
 
     .contact-info-picture {
-
         height: 500px;
-        /* width: 500px */
     }
 
     .contact-foto-container {
         width: 50%;
         display: flex;
         justify-content: center;
-        /* border: 1px solid white; */
     }
 }
