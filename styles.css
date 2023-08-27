@@ -3,6 +3,7 @@
 :root {
     --main-color: #1E6091;
     --secondary-color: #76C893;
+    --third-color: #52B69A;
     --main-font: 'Roboto', sans-serif;
     --main-font-clr: #D9ED92
 }
@@ -27,18 +28,12 @@ body {
     align-items: center;
 }
 
-.portrait-container {
-    height: 500px;
-    width: 350px;
-    margin-top: 50px;
-    /* padding: 10px; */
-    border-radius: 30px;
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;     */
-}
 
 .portrait {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    height: 500px;
+    width: 350px;
     border-radius: 5px;
     object-fit: cover;
 }
@@ -80,10 +75,10 @@ body {
 .github-icon,
 .linkedin-icon {
     font-size: 3rem;
-    color: white;
-    /* width: 50px;
-    height: 50px; */
+    fill: white;
 }
+
+
 
 .project-container {
     display: grid;
@@ -100,6 +95,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     width: 300px;
+    min-height: 350px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    
 }
 
@@ -107,6 +103,10 @@ body {
     height: 55%;
     max-width: 100%;
     object-fit:cover;
+}
+
+.project.three > .app-screenshot {
+    object-fit: fill;
 }
 
 .project-description {
@@ -126,6 +126,10 @@ body {
     margin-left: 20px;
 }
 
+.project.five > .simple-description {
+    padding-bottom: 100px;
+}
+
 .icons-container {
     display: flex;
     justify-self: flex-end;
@@ -134,7 +138,6 @@ body {
 .simple-description {
     display: block;
     padding-bottom: 60px;
-    /* color: white; */
     font-weight: 400;
 }
 
@@ -152,7 +155,7 @@ body {
     background-color: var(--main-color);
     align-items: flex-start;
     padding: 10px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .contact-info-container > * {
@@ -180,3 +183,48 @@ body {
     object-fit: contain;
 }
 
+@media (min-width: 1000px) {
+
+    .about-me {
+        /* border: 1px solid black; */
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100vw;
+        padding: 50px 30px;
+    }
+
+    .portrait-container {
+        border: 1px solid black;
+    }
+
+    .description-container {
+        /* border: 1px solid black; */
+        background-color: var(--third-color);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        border-radius: 0 10px 10px 0;
+        width: 60vw;
+        padding: 10px 30px;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .contact-info-container {
+        /* border: 1px solid white; */
+        width: 50%;
+    }
+
+    .contact-info-picture {
+
+        height: 500px;
+        /* width: 500px */
+    }
+
+    .contact-foto-container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid white; */
+    }
+}
